@@ -3,3 +3,4 @@ Mi intención en este repo es tener mi implementación a ejercicios de leetcode 
 
 Los ejercicios hechos actualmente son:
  * Ejercicio 2 - Two sum
+ * Ejercicio 2 - Palindrome number
