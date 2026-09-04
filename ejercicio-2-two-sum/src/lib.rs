@@ -5,9 +5,40 @@
  *  -109 <= target <= 109
  *  Only one valid answer exists.
  * */
+const MIN_LEN: usize = 2;
+const MAX_LEN: usize = 104;
+const MIN_NUM: i32 = -109;
+const MAX_NUM: i32 = 109;
 
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32>  {
-    vec!{0, 1}
+    if target < MIN_NUM || MAX_NUM < target {
+        return vec!{}
+
+    } else if nums.len() < MIN_LEN || MAX_LEN < nums.len() {
+        return vec!{}
+    }
+
+    for i in 0..nums.len() {
+        let primero = match nums.get(i) {
+            Some(primero) if MIN_NUM <= *primero && *primero <= MAX_NUM => primero,
+            _ => return vec!{},
+        };
+
+        for j in i+1..nums.len() {
+            let segundo = match nums.get(j) {
+                Some(segundo) if MIN_NUM <= *segundo && *segundo <= MAX_NUM => segundo,
+                _ => return vec!{},
+            };
+
+            if primero + segundo != target {
+                continue
+            }
+
+            return vec![i as i32, j as i32]
+        }
+    }
+
+    vec!{}
 }
 
 #[cfg(test)]
@@ -28,6 +59,7 @@ mod tests {
         let resultado_esperado = vec!{1, 2};
 
         assert_eq!(resultado, resultado_esperado);
+    }
  
     #[test]
     fn ejemplo_3() {
@@ -35,7 +67,7 @@ mod tests {
         let resultado_esperado = vec!{0, 1};
 
         assert_eq!(resultado, resultado_esperado);
-    }   }
+    }   
 
     #[test]
     fn no_existe_combinacion() {
