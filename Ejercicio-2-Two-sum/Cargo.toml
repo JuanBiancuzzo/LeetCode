@@ -1,0 +1,6 @@
+[package]
+name = "Ejercicio-2-Two-sum"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
