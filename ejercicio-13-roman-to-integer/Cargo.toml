@@ -1,0 +1,6 @@
+[package]
+name = "ejercicio-13-roman-to-integer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
