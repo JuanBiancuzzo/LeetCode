@@ -92,7 +92,7 @@ impl Iterator for NumeroRomano {
 pub fn roman_to_int(s: String) -> i32 {
     let mut resultado = 0;
     let mut iterator = NumeroRomano::new(s)
-        .unwrap()
+        .expect("No deberia haber un error en la representacion, ese fue un constraints")
         .into_iter();
 
     while let Some((actual, siguiente)) = iterator.next() {
