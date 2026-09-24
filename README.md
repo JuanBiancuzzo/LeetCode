@@ -8,3 +8,4 @@ Los ejercicios hechos actualmente son:
  * Ejercicio 14 - Longest common prefix
  * Ejercicio 20 - Valid parentheses
  * Ejercicio 21 - Merge two sorted lists
+ * Ejercicio 26 - Remove duplicates from Sorted Array
