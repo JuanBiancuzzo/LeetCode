@@ -6,3 +6,16 @@ Tenemos lenguajes como:
  * Rust
  * C
  * Zig
+
+## Ejercicios 
+
+|  Num  |              Ejercicio              |  Rust  |  Zig  |   Go  |   C   | 
+| :---: | ----------------------------------- | :----: | :---: | :---: | :---: |
+|   02  | Roman to integer                    |    ✔   |   -   |   -   |   -   |
+|   09  | Longest common prefix               |    ✔   |   -   |   -   |   -   | 
+|   13  | Two sum                             |    ✔   |   -   |   -   |   -   | 
+|   14  | Valid parentheses                   |    ✔   |   -   |   -   |   -   | 
+|   20  | Merge two sorted lists              |    ✔   |   -   |   -   |   -   | 
+|   21  | Remove duplicates from sorted array |    ✔   |   -   |   -   |   -   | 
+|   22  | Palindrome number                   |    ✘   |   -   |   -   |   -   | 
+
